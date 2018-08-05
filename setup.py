@@ -1,3 +1,4 @@
+import io
 from setuptools import setup
 
 setup(
@@ -7,7 +8,7 @@ setup(
     url='https://github.com/padelt/temper-python',
     version='1.5.3',
     description='Reads temperature from TEMPerV1 devices (USB 0c45:7401)',
-    long_description=open('README.md', encoding='utf-8').read(),
+    long_description=io.open('README.md', encoding='utf-8').read(),
     packages=['temperusb'],
     install_requires=[
         'pyusb>=1.0.0rc1',
